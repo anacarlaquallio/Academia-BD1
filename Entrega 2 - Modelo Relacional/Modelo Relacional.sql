@@ -27,7 +27,6 @@ CREATE TABLE CLIENTE (
 	cpf CHAR (11),
 	nome CHAR (60),
 	telefone CHAR (11),
-	data DATE,
 	PRIMARY KEY (cpf)
 );
 
