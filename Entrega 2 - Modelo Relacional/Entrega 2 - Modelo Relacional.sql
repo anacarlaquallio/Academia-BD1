@@ -46,11 +46,11 @@ CREATE TABLE AVALIACAO_FISICA (
 	cod INTEGER AUTO_INCREMENT,
 	data DATE,
 	descricao CHAR (200),
-cpfPersonal CHAR (11),
-cpfCliente CHAR (11),
+	cpfPersonal CHAR (11),
+	cpfCliente CHAR (11),
 	PRIMARY KEY (cod),
-FOREIGN KEY (cpfPersonal) REFERENCES FUNCIONARIO_PERSONAL (cpfPersonal), 
-FOREIGN KEY (cpfCliente) REFERENCES CLIENTE (cpf) 
+	FOREIGN KEY (cpfPersonal) REFERENCES FUNCIONARIO_PERSONAL (cpfPersonal), 
+	FOREIGN KEY (cpfCliente) REFERENCES CLIENTE (cpf) 
 );
 
 CREATE TABLE FLUXO_CAIXA (
