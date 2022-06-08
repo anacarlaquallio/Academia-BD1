@@ -1,5 +1,6 @@
 INSERT INTO FUNCIONARIO (cpf, nome, dataContratacao) VALUES 
-("05650090602", "Valquiria Fernandes dos Santos Palmeira", "20/06/2008"), ("06601775606", "Marta Siqueira Neves", "13/09/2012"),
+("05650090602", "Valquiria Fernandes dos Santos Palmeira", "20/06/2008"), 
+("06601775606", "Marta Siqueira Neves", "13/09/2012"),
 ("15249340628", "Paulo Richard Vieira Fonseca Rosa", "03/02/2015"),
 ("11365492770", "Thiago Oliveira Silva Martins", "20/06/2008"),
 ("08594743645", "Luciana Cardoso Gonçalves", "20/02/2012"),
@@ -8,7 +9,6 @@ INSERT INTO FUNCIONARIO (cpf, nome, dataContratacao) VALUES
 ("00199828601", "Claudia Moreira Santos", "22/06/2008"),
 ("02572188589", "Kátia Borges Alecrim", "22/06/2008"),
 ("45062727812", "Amanda Beatriz Ponpeo", "07/10/2010"),
-
 ("60586941320", "Abner Silva Sarrazin", "02/11/2008"),
 ("07671368458", "Cleiton Alves Feitosa", "12/06/2008"),
 ("05842364417", "Karine Maria Gonçalves Cortez", "25/04/2021"),
