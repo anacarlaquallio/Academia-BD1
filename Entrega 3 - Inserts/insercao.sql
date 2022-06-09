@@ -137,3 +137,16 @@ INSERT INTO ENDERECO  (cep, rua, logradouro, complemento, cpfCliente) VALUES
 (87302060, "", "Avenida Goioerê, 1060", "Apto 01", "19679640418"),
 (87302150, "Pitanga", "Centro, 806", "Casa", "67232651732"),
 (87302060, "", "Av. Comendador Norberto Marcondes, 613", "Casa", "30243864671");
+
+INSERT INTO AVALIACAO_FISICA (data, descricao, cpfPersonal, cpfCliente) VALUES
+("03/03/2015",  "Peso: 45kg; Altura: 1,58m; Cintura: 66cm; Quadril: 92cm; IMC: 18.03 - Magreza; Doenças: Não há.",  "15249340628",  "68472175103"),
+("24/06/2008",  "Peso: 85kg; Altura: 1,75m; Cintura: 100cm; Quadril: 104cm; IMC: 27.76 - Sobrepeso; Doenças: Não há.",  "11365492770",  "20059093358"),
+("15/08/2021",  "Peso: 53kg; Altura: 1,68m; Cintura: 69cm; Quadril: 95cm; IMC: 18.78 - Normal; Doenças: Não há.",  "44702515691",  "37665482473"),
+("05/11/2014",  "Peso: 110kg; Altura: 1,70m; Cintura: 108cm; Quadril: 112cm; IMC: 38.06 - Obesidade; Doenças: Diabetes e Pressão alta.",  "53467965687",  "99242410292"),
+("10/03/2020",  "Peso: 43kg; Altura: 1,50m; Cintura: 62cm; Quadril: 78cm; IMC: 19.11 - Normal; Doenças: Não há.",  "60586941320",  "95764243130"),
+("22/02/2022", "Peso: 70kg; Altura: 1,80m; Cintura: 89cm; Quadril: 92cm; IMC: 21.06 - Normal; Doenças: Não há.",  "07671368458",  "94147849342"),
+("01/12/2021",  "Peso: 120kg; Altura: 1,90m; Cintura: 100cm; Quadril: 110cm; IMC: 33.24 - Obesidade; Doenças: Pressão alta.",  "07673414490",  "86931895141"),
+("14/02/2022",  "Peso: 55kg; Altura: 1,78m; Cintura: 63cm; Quadril: 80cm; IMC: 18.36 - Magreza; Doenças: Não há.",  "09099983450",  "19679640418"),
+("28/05/2022",  "Peso: 58kg; Altura: 1,61m; Cintura: 70cm; Quadril: 75cm; IMC: 25.44 - Sobrepeso; Doenças: Não há.", "07526066462", "67232651732"),
+("03/03/2022",  "Peso: 90kg; Altura: 1,81m; Cintura: 80cm; Quadril: 110cm; IMC: 27.47 - Sobrepeso; Doenças: Pré-diabetes.",  "02314423437",  "30243864671");
+
