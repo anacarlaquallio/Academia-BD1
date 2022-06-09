@@ -113,3 +113,15 @@ INSERT INTO FUNCIONARIO_SECRETARIA (cpfSecretaria, email, salario, capacitacao) 
 ("09590535496", "marian.santos@outlook.com", 2500.00, "Especialização em Administração"),
 ("06075815490", "jullienyoliveira@hotmail.com", 2100.00, "Graduação em Administração"),
 ("03406454402", "cacazouza@gmail.com", 2100.00, "Graduação em Administração");
+
+INSERT INTO CLIENTE (cpf, nome, telefone) VALUES
+("68472175103", "Brenda Cunha Gonçalves", "44997605234"),
+("20059093358", "Diego Franzon Quallio", "(44991602726"),
+("37665482473", "Isabelle Dias Pinheiro Santos", "44996335527"),
+("99242410292", "Lucas Carvalho de Souza", "44998488393"),
+("95764243130", "Eduarda Barbosa Ronit", "44997605234"),
+("94147849342", "Cauã Correia Marinho", "44982733362"),
+("86931895141", "Kai Cavalcanti Marcondes", "44988588609"),
+("19679640418", "Beatriz Piovanni", "44990113284"),
+("67232651732", "Renan Aoki Koshita", "459857133590"),
+("30243864671", "Emi Kussano de Oliveira", "44985252832");
