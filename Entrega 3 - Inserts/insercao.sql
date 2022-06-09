@@ -125,3 +125,15 @@ INSERT INTO CLIENTE (cpf, nome, telefone) VALUES
 ("19679640418", "Beatriz Piovanni", "44990113284"),
 ("67232651732", "Renan Aoki Koshita", "459857133590"),
 ("30243864671", "Emi Kussano de Oliveira", "44985252832");
+
+INSERT INTO ENDERECO  (cep, rua, logradouro, complemento, cpfCliente) VALUES 
+(87301060, "Pitanga", "Centro, 425", "Apto 05", "68472175103"),
+(87300005, "", "Avenida Capitão Índio Bandeira, 1400", "4 andar", "20059093358"),
+(87302190, "Prefeito Devete de P. Xavier", "Centro, 1018", "", "37665482473"),
+(87301255, "Roberto Brzezinski", "Centro, 395", "Casa", "99242410292"),
+(87301190, "Eugênio Zalevski", "Jardim Capricórnio, 303", "Casa", "95764243130"),
+(87302210, "Aruana", "Centro, 979", "", "94147849342"),
+(87300380, "Harrison José Borges", "Centro, 511", "Casa", "86931895141"),
+(87302060, "", "Avenida Goioerê, 1060", "Apto 01", "19679640418"),
+(87302150, "Pitanga", "Centro, 806", "Casa", "67232651732"),
+(87302060, "", "Av. Comendador Norberto Marcondes, 613", "Casa", "30243864671");
