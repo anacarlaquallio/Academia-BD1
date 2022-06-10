@@ -175,5 +175,14 @@ INSERT INTO MENSALIDADE (cod, valor, descricao, idFluxoCaixa) VALUES
 (0921, 100, "Mensalidade referente 09/21", 10);
 
 INSERT INTO PLANO_TREINO (cod, dataIni, dataFim, descricao, cpfCliente, cpfPersonal, codMensalidade) VALUES
-(1, "10/03/2022", "10/06/2022", "Treino A: Pernas (segundas e quintas-feiras). Treino B: Empurrar (terças e sextas-feiras). Treino C:Puxar (quartas-feiras e sábados)", "68472175103", "15249340628", 0622);
-
+(1, "10/06/2022", "10/07/2022", "Treino A: Pernas (segundas e quintas-feiras). Treino B: Empurrar (terças e sextas-feiras). Treino C: Puxar (quartas-feiras e sábados)", "68472175103", "15249340628", 0622),
+(2, "10/05/2022", "10/06/2022", "Treino A: Pernas (segundas e quintas-feiras).", "20059093358", "11365492770", 0522),
+(3, "10/04/2022", "10/05/2022", "Treino A: Pernas (segundas e quintas-feiras). Treino B: Puxar (quartas-feiras e sábados)", "37665482473", "44702515691", 0422),
+(4, "10/03/2022", "10/04/2022", "Treino A: Empurrar (terças e sextas-feiras). Treino B: Puxar 
+(quartas-feiras e sábados)", "99242410292", "53467965687", 0322),
+(5, "10/02/2022", "10/03/2022", "Treino A: Pernas (segundas e quintas-feiras). Treino B: Empurrar (terças e sextas-feiras). Treino C: Puxar (quartas-feiras e sábados)", "95764243130", "60586941320", 0222),
+(6, "10/01/2022", "10/02/2022", "Treino A: Pernas (segundas e quintas-feiras).", "94147849342", "07671368458", 0122),
+(7, "10/12/2021", "10/01/2022", "Treino A: Puxar (quartas-feiras e sábados)", "86931895141", "07673414490", 1221),
+(8, "10/11/2021", "10/12/2021", "Treino A: Empurrar (terças e sextas-feiras).", "19679640418", "09099983450", 1121),
+(9, "10/10/2021", "10/11/2021", "Treino A: Pernas (segundas e quintas-feiras). Treino B: Puxar (quartas-feiras e sábados)", "67232651732", "07526066462", 1021),
+(10, "10/09/2021", "10/10/2021", "Treino A:Puxar (quartas-feiras e sábados)", "30243864671", "02314423437", 0921);
