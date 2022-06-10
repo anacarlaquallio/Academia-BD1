@@ -185,16 +185,51 @@ INSERT INTO PLANO_TREINO (cod, dataIni, dataFim, descricao, cpfCliente, cpfPerso
 (7, "10/12/2021", "10/01/2022", "Treino A: Puxar (quartas-feiras e sábados)", "86931895141", "07673414490", 1221),
 (8, "10/11/2021", "10/12/2021", "Treino A: Empurrar (terças e sextas-feiras).", "19679640418", "09099983450", 1121),
 (9, "10/10/2021", "10/11/2021", "Treino A: Pernas (segundas e quintas-feiras). Treino B: Puxar (quartas-feiras e sábados)", "67232651732", "07526066462", 1021),
-(10, "10/09/2021", "10/10/2021", "Treino A:Puxar (quartas-feiras e sábados)", "30243864671", "02314423437", 0921);
+(10, "10/09/2021", "10/10/2021", "Treino A: Puxar (quartas-feiras e sábados)", "30243864671", "02314423437", 0921);
 
 INSERT INTO EXERCICIOS (cod, nome, descricao, modalidade) VALUES 
 (1, "Supino reto", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação"),
 (2, "Crucifixo inclinado", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação"),
 (3, "Flexora", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação"),
-(4, "Prancha", "Séries: 2; Repetições: 10 vezes", "Abdominal"),
+(4, "Prancha Abdominal", "Séries: 2; Repetições: 10 vezes", "Abdominal"),
 (5, "Flexão coxo-femural.", "Séries: 2; Repetições: 10 vezes", "Alongamento"),
 (6, "Toes-to-Bar", "Séries: 1; Repetições: 5 vezes", "Crossfit"),
 (7, "Leg Press","Séries: 4; Repetições: 10 vezes", "Musculação"),
 (8, "Burpee", "Séries: 2; Repetições: 4 vezes", "HIIT"),
 (9, "Rosca pulley", "Séries: 3; Repetições: 9 vezes", "Bíceps"),
 (10, "Serrote", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação");
+
+INSERT INTO EQUIPAMENTOS (cod, designacao, quantidade) VALUES
+(1,  "Apoio para prancha.", 3), 
+(2,  "Cadeira Flexora – trabalha bíceps femoral, semitendinoso e semimembranoso, músculos localizados na parte posterior da coxa.", 4), 
+(3,  "Mesa flexora – trabalha bíceps femoral, semitendinoso e semimembranoso, músculos localizados na parte posterior da coxa..", 5), 
+(4,  "Leg horizontal – trabalha quadríceps, bíceps femoral, semitendinoso, semimembranoso e glúteos, ou seja toda a musculatura da coxa.", 1), 
+(5,  "Barras", 5), 
+(6,  "Pulley – trabalha principalmente o grande dorsal. Como esse equipamento permite a troca da barra por outros modelos como por exemplo o triângulo, os músculos ativados podem variar.", 6), 
+(7,  "Supino – Trabalha peitorais e tríceps.", 2), 
+(8,  "Desenvolvimento – Trabalha deltóide, músculo localizado nos ombros.", 1), 
+(9,  "Bíceps – Trabalha o grupo muscular bíceps braquial que é localizado na parte anterior do braço.", 2), 
+(10,  "Halteres", 20);
+
+INSERT INTO  PLANO_TREINO_EXERCICIOS (codExercicio, codPlanoTreino) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
+(7, 7),
+(8, 8),
+(9, 9),
+(10, 10);
+
+INSERT INTO EXERCICIOS_EQUIPAMENTOS (codExercicio, codEquipamento, horario) VALUES 
+(1, 7, "13:00"),
+(3, 2, "8:30"),
+(5, 3, "21:00"),
+(7, 4, "14:15"),
+(9, 9, "18:00"),
+(6, 5, "9:00"),
+(2, 10, "6:00"),
+(4, 1, "20:30"),
+(8, 8, "19:00");
