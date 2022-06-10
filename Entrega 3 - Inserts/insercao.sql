@@ -161,3 +161,16 @@ INSERT INTO FLUXO_CAIXA (id, dataEntrada, tipoEntrada, valor, cpfSecretaria) VAL
 (8, "01/11/2021", "Mensalidade do plano de treino", 100, "09590535496"),
 (9, "01/10/2021", "Mensalidade do plano de treino", 100, "06075815490"),
 (10, "01/09/2021", "Mensalidade do plano de treino", 100, "03406454402");
+
+INSERT INTO MENSALIDADE (valor, descricao, idFluxoCaixa) VALUES
+(100, "Mensalidade referente 06/22", 1),
+(100, "Mensalidade referente 05/22", 2),
+(100, "Mensalidade referente 04/22", 3),
+(100, "Mensalidade referente 03/22", 4),
+(100, "Mensalidade referente 02/22", 5),
+(100, "Mensalidade referente 01/22", 6),
+(100, "Mensalidade referente 12/21", 7),
+(100, "Mensalidade referente 11/21", 8),
+(100, "Mensalidade referente 10/21", 9),
+(100, "Mensalidade referente 09/21", 10);
+
