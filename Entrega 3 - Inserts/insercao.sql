@@ -186,3 +186,15 @@ INSERT INTO PLANO_TREINO (cod, dataIni, dataFim, descricao, cpfCliente, cpfPerso
 (8, "10/11/2021", "10/12/2021", "Treino A: Empurrar (terças e sextas-feiras).", "19679640418", "09099983450", 1121),
 (9, "10/10/2021", "10/11/2021", "Treino A: Pernas (segundas e quintas-feiras). Treino B: Puxar (quartas-feiras e sábados)", "67232651732", "07526066462", 1021),
 (10, "10/09/2021", "10/10/2021", "Treino A:Puxar (quartas-feiras e sábados)", "30243864671", "02314423437", 0921);
+
+INSERT INTO EXERCICIOS (cod, nome, descricao, modalidade) VALUES 
+(1, "Supino reto", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação"),
+(2, "Crucifixo inclinado", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação"),
+(3, "Flexora", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação"),
+(4, "Prancha", "Séries: 2; Repetições: 10 vezes", "Abdominal"),
+(5, "Flexão coxo-femural.", "Séries: 2; Repetições: 10 vezes", "Alongamento"),
+(6, "Toes-to-Bar", "Séries: 1; Repetições: 5 vezes", "Crossfit"),
+(7, "Leg Press","Séries: 4; Repetições: 10 vezes", "Musculação"),
+(8, "Burpee", "Séries: 2; Repetições: 4 vezes", "HIIT"),
+(9, "Rosca pulley", "Séries: 3; Repetições: 9 vezes", "Bíceps"),
+(10, "Serrote", "Séries: 3; Repetições: 12 a 15 vezes", "Musculação");
