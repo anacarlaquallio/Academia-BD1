@@ -147,9 +147,9 @@ INSERT INTO AVALIACAO_FISICA (cod, data, descricao, cpfPersonal, cpfCliente) VAL
 (5, "09/02/2022",  "Peso: 43kg; Altura: 1,50m; Cintura: 62cm; Quadril: 78cm; IMC: 19.11 - Normal; Doenças: Não há.",  "60586941320",  "95764243130"),
 (6, "22/12/2021", "Peso: 70kg; Altura: 1,80m; Cintura: 89cm; Quadril: 92cm; IMC: 21.06 - Normal; Doenças: Não há.",  "07671368458",  "94147849342"),
 (7, "01/12/2021",  "Peso: 120kg; Altura: 1,90m; Cintura: 100cm; Quadril: 110cm; IMC: 33.24 - Obesidade; Doenças: Pressão alta.",  "07673414490",  "86931895141"),
-(8, "14/10/2022",  "Peso: 55kg; Altura: 1,78m; Cintura: 63cm; Quadril: 80cm; IMC: 18.36 - Magreza; Doenças: Não há.",  "09099983450",  "19679640418"),
-(9, "28/08/2022",  "Peso: 58kg; Altura: 1,61m; Cintura: 70cm; Quadril: 75cm; IMC: 25.44 - Sobrepeso; Doenças: Não há.", "07526066462", "67232651732"),
-(10, "03/07/2022",  "Peso: 90kg; Altura: 1,81m; Cintura: 80cm; Quadril: 110cm; IMC: 27.47 - Sobrepeso; Doenças: Pré-diabetes.",  "02314423437",  "30243864671");
+(8, "14/10/2021",  "Peso: 55kg; Altura: 1,78m; Cintura: 63cm; Quadril: 80cm; IMC: 18.36 - Magreza; Doenças: Não há.",  "09099983450",  "19679640418"),
+(9, "28/08/2021",  "Peso: 58kg; Altura: 1,61m; Cintura: 70cm; Quadril: 75cm; IMC: 25.44 - Sobrepeso; Doenças: Não há.", "07526066462", "67232651732"),
+(10, "03/07/2021",  "Peso: 90kg; Altura: 1,81m; Cintura: 80cm; Quadril: 110cm; IMC: 27.47 - Sobrepeso; Doenças: Pré-diabetes.",  "02314423437",  "30243864671");
 
 INSERT INTO FLUXO_CAIXA (id, dataEntrada, tipoEntrada, valor, cpfSecretaria) VALUES 
 (1, "01/06/2022", "Mensalidade do plano de treino", 100, "05650090602"),
