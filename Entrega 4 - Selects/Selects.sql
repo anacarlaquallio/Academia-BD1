@@ -14,3 +14,7 @@ WHERE F.cpf = FS.cpfSecretaria GROUP BY FS.capacitacao;
 -- Selecione o horário de funcionamento do equipamento que é utilizado no exercício "Supino reto"
 SELECT EE.horario FROM EXERCICIOS_EQUIPAMENTOS EE WHERE EE.codExercicio IN
 (SELECT E.cod FROM EXERCICIOS E WHERE E.nome LIKE "Supino reto");
+
+-- Selecione a data de contratacao e quantas avaliacoes físicas o personal de cpf = "11365492770" fez.
+SELECT F.dataContratacao, COUNT (A.cod) AS Qtde_Avaliacoes FROM FUNCIONARIO F, AVALIACAO_FISICA A
+WHERE F.cpf = "11365492770" AND F.cpf = A.cpfPersonal;
