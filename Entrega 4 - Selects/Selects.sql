@@ -18,3 +18,8 @@ SELECT EE.horario FROM EXERCICIOS_EQUIPAMENTOS EE WHERE EE.codExercicio IN
 -- Selecione a data de contratacao e quantas avaliacoes físicas o personal de cpf = "11365492770" fez.
 SELECT F.dataContratacao, COUNT (A.cod) AS Qtde_Avaliacoes FROM FUNCIONARIO F, AVALIACAO_FISICA A
 WHERE F.cpf = "11365492770" AND F.cpf = A.cpfPersonal;
+
+-- Selecione a data de entrada no caixa da mensalidade paga pelo cliente chamado "Diego Franzon Quallio".
+SELECT FC.dataEntrada FROM FLUXO_CAIXA FC, MENSALIDADE M, PLANO_TREINO PT, CLIENTE C
+WHERE C.nome = "Diego Franzon Quallio" AND C.cpf = PT.cpfCliente AND PT.codMensalidade = M.cod
+AND M.idFluxoCaixa = FC.id;
