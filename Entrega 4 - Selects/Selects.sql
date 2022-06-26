@@ -6,3 +6,7 @@ AND FC.id IN (SELECT M.idFluxoCaixa FROM MENSALIDADE M WHERE M.cod = 0622);
 -- Encontre as datas de início, termino e o nome do personal do plano de treino feito com base na avaliação física de código 8.
 SELECT PT.dataIni, PT.dataFim, F.nome FROM PLANO_TREINO PT, AVALIACAO_FISICA AF, FUNCIONARIO F
 WHERE  PT.cpfCliente = AF.cpfCliente AND AF.cod = 8 AND PT.cpfPersonal = F.cpf;
+
+-- Compute o salário médio do cargo de secretária da academia por capacitação
+SELECT AVG(FS.salario) AS Salario_Medio, FS.capacitacao AS Capacitacao FROM FUNCIONARIO_SECRETARIA FS, FUNCIONARIO F 
+WHERE F.cpf = FS.cpfSecretaria GROUP BY FS.capacitacao;
