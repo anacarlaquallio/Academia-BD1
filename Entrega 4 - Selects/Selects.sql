@@ -26,4 +26,7 @@ WHERE C.nome = "Diego Franzon Quallio" AND C.cpf = PT.cpfCliente AND PT.codMensa
 -- Selecione os endereços que não possuem compelemento dos clientes da academia. 
 SELECT E.cep, E.rua, E.logradouro FROM ENDERECO E, CLIENTE C WHERE C.cpf = E.cpfCliente AND (E.complemento IS NULL OR E.complemento LIKE "");
 
-
+-- Selecione o nome dos clientes que não pagaram a mensalidade do mês de maio
+SELECT C.nome FROM  CLIENTE C, PLANO_TREINO PT WHERE PT.cpfCliente = C.cpf AND NOT EXISTS 
+(SELECT * FROM FLUXO_CAIXA FC, MENSALIDADE M
+WHERE M.idFluxoCaixa = FC.id AND PT.codMensalidade = M.cod AND FC.dataEntrada >= '01/05/2022' and FC.dataEntrada <= '31/05/2022');
