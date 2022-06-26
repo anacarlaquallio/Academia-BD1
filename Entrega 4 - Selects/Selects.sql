@@ -26,6 +26,4 @@ WHERE C.nome = "Diego Franzon Quallio" AND C.cpf = PT.cpfCliente AND PT.codMensa
 -- Selecione os endereços que não possuem compelemento dos clientes da academia. 
 SELECT E.cep, E.rua, E.logradouro FROM ENDERECO E, CLIENTE C WHERE C.cpf = E.cpfCliente AND (E.complemento IS NULL OR E.complemento LIKE "");
 
--- Encontre os nomes dos profissionais para os quais a quantidade de treinos que eles gerenciam é menor do que 3.
-SELECT DISTINCT F.nome FROM FUNCIONARIO F, FUNCIONARIO_PERSONAL FP WHERE F.cpf = FP.cpfPersonal AND 3 > 
-(SELECT COUNT (PT.cod) FROM PLANO_TREINO PT WHERE PT.cpfPersonal = F.cpf);
+
