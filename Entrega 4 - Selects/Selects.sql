@@ -37,6 +37,6 @@ FROM CLIENTE C, PLANO_TREINO PT, FUNCIONARIO F, FUNCIONARIO_PERSONAL FP WHERE
 PT.cpfCliente = C.cpf AND F.cpf = FP.cpfPersonal AND PT.cpfPersonal = FP.cpfPersonal GROUP BY F.nome HAVING COUNT (*) = 1;
 
 -- Compute a diferença entre valor gasto mensalmente com a folha de pagamento das secretarias que possuem especialização com as que não tem.
-select (x-y) FROM (SELECT SUM(FS.salario) AS x FROM FUNCIONARIO_SECRETARIA FS, FUNCIONARIO F WHERE FS.cpfSecretaria = F.cpf
+SELECT (x-y) FROM (SELECT SUM(FS.salario) AS x FROM FUNCIONARIO_SECRETARIA FS, FUNCIONARIO F WHERE FS.cpfSecretaria = F.cpf
 AND FS.capacitacao = "Especialização em Administração"), (SELECT SUM(FS.salario) AS y FROM FUNCIONARIO_SECRETARIA FS, FUNCIONARIO F WHERE FS.cpfSecretaria = F.cpf
 AND FS.capacitacao = "Graduação em Administração");
