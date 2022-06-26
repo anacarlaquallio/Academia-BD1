@@ -26,7 +26,7 @@ WHERE C.nome = "Diego Franzon Quallio" AND C.cpf = PT.cpfCliente AND PT.codMensa
 -- Selecione os endereços que não possuem compelemento dos clientes da academia. 
 SELECT E.cep, E.rua, E.logradouro FROM ENDERECO E, CLIENTE C WHERE C.cpf = E.cpfCliente AND (E.complemento IS NULL OR E.complemento LIKE "");
 
--- Selecione o nome dos clientes que não pagaram a mensalidade no dia 01/01/2022.
+-- Selecione o nome dos clientes que não pagaram a mensalidade no dia 01/05/2022.
 SELECT C.nome FROM  CLIENTE C, PLANO_TREINO PT WHERE PT.cpfCliente = C.cpf AND NOT EXISTS 
 (SELECT * FROM FLUXO_CAIXA FC, MENSALIDADE M
 WHERE M.idFluxoCaixa = FC.id AND PT.codMensalidade = M.cod AND FC.dataEntrada LIKE "01/05/2022");
@@ -35,3 +35,8 @@ WHERE M.idFluxoCaixa = FC.id AND PT.codMensalidade = M.cod AND FC.dataEntrada LI
 SELECT F.nome AS Nome_Personal, C.nome as Nome_Cliente 
 FROM CLIENTE C, PLANO_TREINO PT, FUNCIONARIO F, FUNCIONARIO_PERSONAL FP WHERE 
 PT.cpfCliente = C.cpf AND F.cpf = FP.cpfPersonal AND PT.cpfPersonal = FP.cpfPersonal GROUP BY F.nome HAVING COUNT (*) = 1;
+
+-- Compute a diferença entre valor gasto mensalmente com a folha de pagamento das secretarias que possuem especialização com as que não tem.
+select (x-y) FROM (SELECT SUM(FS.salario) AS x FROM FUNCIONARIO_SECRETARIA FS, FUNCIONARIO F WHERE FS.cpfSecretaria = F.cpf
+AND FS.capacitacao = "Especialização em Administração"), (SELECT SUM(FS.salario) AS y FROM FUNCIONARIO_SECRETARIA FS, FUNCIONARIO F WHERE FS.cpfSecretaria = F.cpf
+AND FS.capacitacao = "Graduação em Administração");
