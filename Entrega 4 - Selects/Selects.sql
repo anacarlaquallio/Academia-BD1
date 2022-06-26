@@ -30,3 +30,8 @@ SELECT E.cep, E.rua, E.logradouro FROM ENDERECO E, CLIENTE C WHERE C.cpf = E.cpf
 SELECT C.nome FROM  CLIENTE C, PLANO_TREINO PT WHERE PT.cpfCliente = C.cpf AND NOT EXISTS 
 (SELECT * FROM FLUXO_CAIXA FC, MENSALIDADE M
 WHERE M.idFluxoCaixa = FC.id AND PT.codMensalidade = M.cod AND FC.dataEntrada >= '01/05/2022' and FC.dataEntrada <= '31/05/2022');
+
+-- Selecione os nomes dos personais fizeram o plano de treino para apenas um cliente. Mostre também o nome do cliente correspondente 
+SELECT F.nome AS Nome_Personal, C.nome as Nome_Cliente 
+FROM CLIENTE C, PLANO_TREINO PT, FUNCIONARIO F, FUNCIONARIO_PERSONAL FP WHERE 
+PT.cpfCliente = C.cpf AND F.cpf = FP.cpfPersonal AND PT.cpfPersonal = FP.cpfPersonal GROUP BY F.nome HAVING COUNT (*) = 1;
